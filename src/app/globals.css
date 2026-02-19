@@ -1,13 +1,16 @@
 @import "tailwindcss";
 
+/* =========================
+   THEME VARIABLES
+========================= */
+
 :root {
-  --background: #0B0F19;
+  --background: #000000;
   --foreground: #E5E7EB;
   --primary: #7C3AED;
   --secondary: #06B6D4;
   --accent: #F43F5E;
   --brand-green: #15803d;
-
 }
 
 :root[data-theme="light"] {
@@ -17,13 +20,42 @@
   --secondary: #0891B2;
   --accent: #BE123C;
   --brand-green: #15803d;
-
 }
+
+/* =========================
+   BASE STYLES
+========================= */
 
 html {
-  background: var(--background);
+  background-color: var(--background);
   color: var(--foreground);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
+
+/* =========================
+   DARK MODE BACKGROUND SVG
+========================= */
+
+html[data-theme="dark"] {
+  background-color: var(--background);
+  background-image:
+    linear-gradient(rgba(0,0,0,0.70), rgba(0,0,0,0.70)),
+    url('/doodle-for-dark.svg');
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-size: auto, 500px 500px;
+}
+
+
+/* Light mode explicitly has no SVG */
+html[data-theme="light"] {
+  background-image: none;
+}
+
+/* =========================
+   ANIMATIONS
+========================= */
+
 @keyframes fadeUp {
   0% {
     opacity: 0;
@@ -38,4 +70,3 @@ html {
 .fade-up {
   animation: fadeUp 0.8s ease-out forwards;
 }
-

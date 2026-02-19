@@ -20,7 +20,6 @@ export default function Home() {
         >
           <div className="flex flex-col md:flex-row items-center gap-4 md:gap-10">
 
-            {/* Left - Logo */}
             <div className="flex-shrink-0">
               <Image
                 src="/Logo.png"
@@ -31,7 +30,6 @@ export default function Home() {
               />
             </div>
 
-            {/* Right - Content */}
             <div className="text-center md:text-left space-y-6">
               <h1 className="text-4xl md:text-5xl font-bold tracking-tight">
                 The Ethos Collective
@@ -47,61 +45,59 @@ export default function Home() {
         </div>
 
         {/* Buttons Section */}
-        <div className="mt-5 md:mt-10 flex flex-row gap-4 md:gap-8 justify-center">
+        <div className="fade-up mt-12 md:mt-16 flex flex-row gap-4 md:gap-8 justify-center">
 
           <button
-className="
-  min-w-[140px]
-  px-6 py-3 rounded-2xl
-  border border-green-500/40
-  text-foreground
+            className="
+              min-w-[220px]
+              px-10 py-5 rounded-2xl
+              bg-green-500/45
+              border border-green-400/60
+              text-green-100
 
-  shadow-[0_0_10px_rgba(34,197,94,0.25)]
+              shadow-[0_0_14px_rgba(255,215,0,0.22)]
 
-  hover:shadow-[0_0_18px_rgba(34,197,94,0.5)]
-  hover:-translate-y-1
+              hover:bg-green-500/55
+              hover:shadow-[0_0_28px_rgba(255,215,0,0.35)]
+              hover:-translate-y-1
+              hover:scale-[1.03]
 
-  active:scale-95
-  active:shadow-[0_0_12px_rgba(34,197,94,0.6)]
+              active:scale-95
+              active:shadow-[0_0_16px_rgba(255,215,0,0.30)]
 
-  transition-all duration-300
-  touch-manipulation
-"
+              transition-all duration-300 ease-out
+              touch-manipulation
+            "
+          >
+            <span className="md:hidden">Join</span>
+            <span className="hidden md:inline">Join the Collective</span>
+          </button>
 
+          <button
+            className="
+              min-w-[220px]
+              px-10 py-5 rounded-2xl
+              bg-green-500/45
+              border border-green-400/60
+              text-green-100
 
+              shadow-[0_0_14px_rgba(255,215,0,0.22)]
 
+              hover:bg-green-500/55
+              hover:shadow-[0_0_28px_rgba(255,215,0,0.35)]
+              hover:-translate-y-1
+              hover:scale-[1.03]
 
->
-  <span className="md:hidden">Join</span>
-  <span className="hidden md:inline">Join the Collective</span>
-</button>
+              active:scale-95
+              active:shadow-[0_0_16px_rgba(255,215,0,0.30)]
 
-<button
-  className="
-  min-w-[140px]
-  px-6 py-3 rounded-2xl
-  border border-green-500/40
-  text-foreground
-
-  shadow-[0_0_10px_rgba(34,197,94,0.25)]
-
-  hover:shadow-[0_0_18px_rgba(34,197,94,0.5)]
-  hover:-translate-y-1
-
-  active:scale-95
-  active:shadow-[0_0_12px_rgba(34,197,94,0.6)]
-
-  transition-all duration-300
-  touch-manipulation
-"
-
-
-
->
-  <span className="md:hidden">UniSync</span>
-  <span className="hidden md:inline">Club Management Tool</span>
-</button>
-
+              transition-all duration-300 ease-out
+              touch-manipulation
+            "
+          >
+            <span className="md:hidden">UniSync</span>
+            <span className="hidden md:inline">Club Management Tool</span>
+          </button>
 
         </div>
       </main>
