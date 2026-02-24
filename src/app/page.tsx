@@ -4,11 +4,12 @@ import QnASection from "@/components/QnASection";
 export default function Home() {
   return (
     <>
-      <main className="min-h-[80vh] flex flex-col items-center justify-center pt-5 bg-background text-foreground px-6">
+      <main className="min-h-[80vh] flex flex-col items-center justify-center pt-8 md:pt-12 bg-background text-foreground px-6">
         
         {/* Hero Glass Card */}
         <div
           className="
+            w-full max-w-5xl
             fade-up
             bg-background/70
             backdrop-blur-md
@@ -18,24 +19,27 @@ export default function Home() {
             p-8 md:p-12
           "
         >
-          <div className="flex flex-col md:flex-row items-center gap-4 md:gap-10">
+          <div className="flex flex-col md:flex-row items-center gap-6 md:gap-12">
 
+            {/* Logo */}
             <div className="flex-shrink-0">
               <Image
                 src="/Logo.png"
                 alt="Ethos Logo"
-                width={200}
-                height={200}
-                className="w-48 h-48 md:w-64 md:h-64 object-contain"
+                width={256}
+                height={256}
+                className="w-40 h-40 sm:w-48 sm:h-48 md:w-64 md:h-64 object-contain"
+                priority
               />
             </div>
 
-            <div className="text-center md:text-left space-y-6">
-              <h1 className="text-4xl md:text-5xl font-bold tracking-tight">
+            {/* Text Content */}
+            <div className="text-center md:text-left space-y-6 max-w-xl">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight">
                 The Ethos Collective
               </h1>
 
-              <p className="text-foreground/70 text-lg max-w-xl">
+              <p className="text-foreground/70 text-base sm:text-lg">
                 Rooted in engineering. Driven by systems thinking.
                 We design resilient infrastructure, intelligent
                 technologies, and scalable solutions for the future.
@@ -45,59 +49,66 @@ export default function Home() {
         </div>
 
         {/* Buttons Section */}
-        <div className="fade-up mt-12 md:mt-16 flex flex-row gap-4 md:gap-8 justify-center">
+        <div className="fade-up mt-10 md:mt-16 w-full max-w-2xl flex gap-4 md:gap-8 justify-center">
 
           <button
             className="
-              min-w-[220px]
-              px-10 py-5 rounded-2xl
-              bg-green-500/45
-              border border-green-400/60
-              text-green-100
+  flex-1
+  px-4 sm:px-6 md:px-10
+  py-3 sm:py-4 md:py-5
+  rounded-2xl
 
-              shadow-[0_0_14px_rgba(255,215,0,0.22)]
+  bg-green-500/80 dark:bg-green-500/80
+  border border-green-400/60
 
-              hover:bg-green-500/55
-              hover:shadow-[0_0_28px_rgba(255,215,0,0.35)]
-              hover:-translate-y-1
-              hover:scale-[1.03]
+  text-foreground text-sm sm:text-base md:text-lg
 
-              active:scale-95
-              active:shadow-[0_0_16px_rgba(255,215,0,0.30)]
+  shadow-md dark:shadow-[0_0_14px_rgba(255,215,0,0.22)]
 
-              transition-all duration-300 ease-out
-              touch-manipulation
-            "
+  hover:bg-green-500/90 dark:hover:bg-green-500/55
+  hover:-translate-y-1
+  hover:scale-[1.03]
+
+  active:scale-95
+
+  transition-all duration-300 ease-out
+  touch-manipulation
+"
           >
             <span className="md:hidden">Join</span>
             <span className="hidden md:inline">Join the Collective</span>
           </button>
 
+          {/* UniSync Button */}
           <button
-            className="
-              min-w-[220px]
-              px-10 py-5 rounded-2xl
-              bg-green-500/45
-              border border-green-400/60
-              text-green-100
+          className="
+  flex-1
+  px-4 sm:px-6 md:px-10
+  py-3 sm:py-4 md:py-5
+  rounded-2xl
 
-              shadow-[0_0_14px_rgba(255,215,0,0.22)]
+  bg-green-500/80 dark:bg-green-500/80
+  border border-green-400/60
 
-              hover:bg-green-500/55
-              hover:shadow-[0_0_28px_rgba(255,215,0,0.35)]
-              hover:-translate-y-1
-              hover:scale-[1.03]
+  text-foreground text-sm sm:text-base md:text-lg
 
-              active:scale-95
-              active:shadow-[0_0_16px_rgba(255,215,0,0.30)]
+  shadow-md dark:shadow-[0_0_14px_rgba(255,215,0,0.22)]
 
-              transition-all duration-300 ease-out
-              touch-manipulation
-            "
+  hover:bg-green-500/90 dark:hover:bg-green-500/55
+  hover:-translate-y-1
+  hover:scale-[1.03]
+
+  active:scale-95
+
+  transition-all duration-300 ease-out
+  touch-manipulation
+"
           >
             <span className="md:hidden">UniSync</span>
             <span className="hidden md:inline">Club Management Tool</span>
           </button>
+          
+          
 
         </div>
       </main>

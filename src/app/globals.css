@@ -39,7 +39,7 @@ html {
 html[data-theme="dark"] {
   background-color: var(--background);
   background-image:
-    linear-gradient(rgba(0,0,0,0.70), rgba(0,0,0,0.70)),
+    linear-gradient(rgba(0,0,0,0.80), rgba(0,0,0,0.80)),
     url('/doodle-for-dark.svg');
   background-repeat: repeat;
   background-attachment: fixed;
@@ -47,9 +47,17 @@ html[data-theme="dark"] {
 }
 
 
-/* Light mode explicitly has no SVG */
+/* Light mode SVG */
+
 html[data-theme="light"] {
-  background-image: none;
+  background-color: var(--background);
+  background-image:
+    linear-gradient(rgba(255,255,255,0.80), rgba(255,255,255,0.80)),
+    url('/doodle-for-light.svg');
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-size: auto, 500px 500px;
+  background-position: top left;
 }
 
 /* =========================
