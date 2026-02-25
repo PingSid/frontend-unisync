@@ -7,7 +7,15 @@ export default function QnASection() {
 
         <QnABlock
           question="Why does Ethos exist?"
-          answer="Because engineering without philosophy becomes fragile. We exist to design systems that endure complexity, scale intelligently, and serve real-world needs."
+          answer="Ethos exists to introduce systems thinking into student growth.
+
+It is designed to:
+
+Create structured coordination 
+Ensure consistent and disciplined academic engagement
+Promote ethical and responsible execution
+Enhance knowledge beyond classroom boundaries
+Build a culture of research, innovation, and collaboration along with Constant learning growth."
           image="/q1.jpg"
         />
 

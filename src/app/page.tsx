@@ -40,9 +40,7 @@ export default function Home() {
               </h1>
 
               <p className="text-foreground/70 text-base sm:text-lg">
-                Rooted in engineering. Driven by systems thinking.
-                We design resilient infrastructure, intelligent
-                technologies, and scalable solutions for the future.
+                Building an ethical, collaborative ecosystem that enhances knowledge through structured coordination.
               </p>
             </div>
           </div>
