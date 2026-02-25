@@ -49,64 +49,66 @@ export default function Home() {
         {/* Buttons Section */}
         <div className="fade-up mt-10 md:mt-16 w-full max-w-2xl flex gap-4 md:gap-8 justify-center">
 
-          <button
+          {/* Join the Collective (Google Form Link) */}
+          <a
+            href="https://forms.gle/m45koAo32TueDmxD9"
+            target="_blank"
+            rel="noopener noreferrer"
             className="
-  flex-1
-  px-4 sm:px-6 md:px-10
-  py-3 sm:py-4 md:py-5
-  rounded-2xl
+              flex-1 text-center
+              px-4 sm:px-6 md:px-10
+              py-3 sm:py-4 md:py-5
+              rounded-2xl
 
-  bg-green-500/80 dark:bg-green-500/80
-  border border-green-400/60
+              bg-green-500/80 dark:bg-green-500/80
+              border border-green-400/60
 
-  text-foreground text-sm sm:text-base md:text-lg
+              text-foreground text-sm sm:text-base md:text-lg
 
-  shadow-md dark:shadow-[0_0_14px_rgba(255,215,0,0.22)]
+              shadow-md dark:shadow-[0_0_14px_rgba(255,215,0,0.22)]
 
-  hover:bg-green-500/90 dark:hover:bg-green-500/55
-  hover:-translate-y-1
-  hover:scale-[1.03]
+              hover:bg-green-500/90 dark:hover:bg-green-500/55
+              hover:-translate-y-1
+              hover:scale-[1.03]
 
-  active:scale-95
+              active:scale-95
 
-  transition-all duration-300 ease-out
-  touch-manipulation
-"
+              transition-all duration-300 ease-out
+              touch-manipulation
+            "
           >
             <span className="md:hidden">Join</span>
             <span className="hidden md:inline">Join the Collective</span>
-          </button>
+          </a>
 
           {/* UniSync Button */}
           <button
-          className="
-  flex-1
-  px-4 sm:px-6 md:px-10
-  py-3 sm:py-4 md:py-5
-  rounded-2xl
+            className="
+              flex-1
+              px-4 sm:px-6 md:px-10
+              py-3 sm:py-4 md:py-5
+              rounded-2xl
 
-  bg-green-500/80 dark:bg-green-500/80
-  border border-green-400/60
+              bg-green-500/80 dark:bg-green-500/80
+              border border-green-400/60
 
-  text-foreground text-sm sm:text-base md:text-lg
+              text-foreground text-sm sm:text-base md:text-lg
 
-  shadow-md dark:shadow-[0_0_14px_rgba(255,215,0,0.22)]
+              shadow-md dark:shadow-[0_0_14px_rgba(255,215,0,0.22)]
 
-  hover:bg-green-500/90 dark:hover:bg-green-500/55
-  hover:-translate-y-1
-  hover:scale-[1.03]
+              hover:bg-green-500/90 dark:hover:bg-green-500/55
+              hover:-translate-y-1
+              hover:scale-[1.03]
 
-  active:scale-95
+              active:scale-95
 
-  transition-all duration-300 ease-out
-  touch-manipulation
-"
+              transition-all duration-300 ease-out
+              touch-manipulation
+            "
           >
             <span className="md:hidden">UniSync</span>
             <span className="hidden md:inline">Club Management Tool</span>
           </button>
-          
-          
 
         </div>
       </main>
