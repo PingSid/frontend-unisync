@@ -1,5 +1,6 @@
 import Image from "next/image";
 import QnASection from "@/components/QnASection";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -77,38 +78,39 @@ export default function Home() {
               touch-manipulation
             "
           >
-            <span className="md:hidden">Join</span>
+            <span className="md:hidden">Join Ethos</span>
             <span className="hidden md:inline">Join the Collective</span>
           </a>
 
           {/* UniSync Button */}
-          <button
-            className="
-              flex-1
-              px-4 sm:px-6 md:px-10
-              py-3 sm:py-4 md:py-5
-              rounded-2xl
+<Link
+  href="/register"
+  className="
+    flex-1 text-center
+    px-4 sm:px-6 md:px-10
+    py-3 sm:py-4 md:py-5
+    rounded-2xl
 
-              bg-green-500/80 dark:bg-green-500/80
-              border border-green-400/60
+    bg-green-500/80 dark:bg-green-500/80
+    border border-green-400/60
 
-              text-foreground text-sm sm:text-base md:text-lg
+    text-foreground text-sm sm:text-base md:text-lg
 
-              shadow-md dark:shadow-[0_0_14px_rgba(255,215,0,0.22)]
+    shadow-md dark:shadow-[0_0_14px_rgba(255,215,0,0.22)]
 
-              hover:bg-green-500/90 dark:hover:bg-green-500/55
-              hover:-translate-y-1
-              hover:scale-[1.03]
+    hover:bg-green-500/90 dark:hover:bg-green-500/55
+    hover:-translate-y-1
+    hover:scale-[1.03]
 
-              active:scale-95
+    active:scale-95
 
-              transition-all duration-300 ease-out
-              touch-manipulation
-            "
-          >
-            <span className="md:hidden">UniSync</span>
-            <span className="hidden md:inline">Club Management Tool</span>
-          </button>
+    transition-all duration-300 ease-out
+    touch-manipulation
+  "
+>
+  <span className="md:hidden">Club Registration</span>
+  <span className="hidden md:inline">Club Registration</span>
+</Link>
 
         </div>
       </main>

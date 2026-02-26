@@ -7,19 +7,31 @@
 :root {
   --background: #000000;
   --foreground: #E5E7EB;
+
   --primary: #7C3AED;
   --secondary: #06B6D4;
   --accent: #F43F5E;
   --brand-green: #15803d;
+
+  --card-bg: #0f0f0f;
+  --card-border: #1f1f1f;
+
+  --gold-glow: rgba(255, 215, 0, 0.25);
 }
 
 :root[data-theme="light"] {
   --background: #FFFFFF;
   --foreground: #111111;
+
   --primary: #6D28D9;
   --secondary: #0891B2;
   --accent: #BE123C;
   --brand-green: #15803d;
+
+  --card-bg: #ffffff;
+  --card-border: #e5e7eb;
+
+  --gold-glow: rgba(255, 183, 0, 0.25);
 }
 
 /* =========================
@@ -33,11 +45,10 @@ html {
 }
 
 /* =========================
-   DARK MODE BACKGROUND SVG
+   BACKGROUND SVG SYSTEM
 ========================= */
 
 html[data-theme="dark"] {
-  background-color: var(--background);
   background-image:
     linear-gradient(rgba(0,0,0,0.80), rgba(0,0,0,0.80)),
     url('/doodle-for-dark.svg');
@@ -46,11 +57,7 @@ html[data-theme="dark"] {
   background-size: auto, 500px 500px;
 }
 
-
-/* Light mode SVG */
-
 html[data-theme="light"] {
-  background-color: var(--background);
   background-image:
     linear-gradient(rgba(255,255,255,0.80), rgba(255,255,255,0.80)),
     url('/doodle-for-light.svg');
@@ -77,4 +84,61 @@ html[data-theme="light"] {
 
 .fade-up {
   animation: fadeUp 0.8s ease-out forwards;
+}
+
+/* =========================
+   CARD GOLDEN GLOW
+========================= */
+
+.golden-glow {
+  box-shadow:
+    0 15px 50px rgba(0, 0, 0, 0.35),
+    0 0 60px rgba(255, 215, 0, 0.35);
+  transition: box-shadow 0.3s ease;
+}
+
+.golden-glow:hover {
+  box-shadow:
+    0 20px 60px rgba(0, 0, 0, 0.45),
+    0 0 90px rgba(255, 215, 0, 0.55);
+}
+
+/* =========================
+   INPUT STYLES (ENHANCED GLOW)
+========================= */
+
+.input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border-radius: 0.75rem;
+
+  border: 1.5px solid rgba(0, 0, 0, 0.15);
+  background: var(--background);
+  color: var(--foreground);
+
+  outline: none;
+  transition: 
+    border-color 0.2s ease,
+    box-shadow 0.3s ease,
+    transform 0.15s ease;
+}
+
+/* Dark mode border */
+:root[data-theme="dark"] .input {
+  border: 1.5px solid rgba(255, 255, 255, 0.15);
+}
+
+/* Subtle hover glow */
+.input:hover {
+  border-color: var(--brand-green);
+  box-shadow: 0 0 12px rgba(255, 215, 0, 0.25);
+}
+
+/* Strong focus glow */
+.input:focus {
+  border-color: var(--brand-green);
+  box-shadow:
+    0 0 0 3px rgba(255, 215, 0, 0.35),
+    0 0 25px rgba(255, 215, 0, 0.55);
+  transform: translateY(-2px);
 }

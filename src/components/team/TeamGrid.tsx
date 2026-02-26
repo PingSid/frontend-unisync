@@ -4,28 +4,31 @@ const teamData = [
   {
     title: "The Executive Council",
     members: [
-      { name: "Aryan", role: "Systems Architect", image: "/team/member2.png" },
-      { name: "Meera", role: "Kernel Explorer", image: "/team/member2.png" },
-      { name: "Chris", role: "Kernel Explorer", image: "/team/member2.png" },
+      { name: "Suhas Basappa Mali", role: "President", image: "/team/suhas.jpeg" },
+      { name: "Rudransh Vatsayan", role: "Vice President", image: "/team/rudransh.jpg" },
+      { name: "Yashwanth R", role: "Secretary", image: "/team/yashwanth.jpg" },
 
     ],
   },
   {
     title: "The Stewardship Council",
     members: [
-      { name: "Kabir", role: "Full Stack Dev", image: "/team/member2.png" },
-      { name: "Riya", role: "UI Engineer", image: "/team/member2.png" },
-      { name: "Sara", role: "UI Engineer", image: "/team/member2.png" },
-      { name: "Riya", role: "UI Engineer", image: "/team/member2.png" },
-    ],
+      { name: "Sidharth Hanish", role: "SysAdmin", image: "/team/sidharth.jpeg" },
+      { name: "Sinchana M", role: "AI-ML", image: "/team/member2.png" },
+      { name: "Prasad Salagare", role: "UI Engineer", image: "/team/member2.png" },
+      { name: "Diwakar S Gowda", role: "UI Engineer", image: "/team/member2.png" },
+      { name: "Siddharth R", role: "UI Engineer", image: "/team/siddharth.jpeg" },
+          ],
   },
   {
     title: "Members",
     members: [
-      { name: "Zaid", role: "AI Researcher", image: "/team/member2.png" },
-      { name: "Zaid", role: "AI Researcher", image: "/team/member2.png" },
-      { name: "Zaid", role: "AI Researcher", image: "/team/member2.png" },
-      { name: "Zaid", role: "AI Researcher", image: "/team/member2.png" },
+      { name: "Sri Vidya", role: "", image: "/team/srividya.jpg" },
+      { name: "Disha Sudeep", role: "", image: "/team/disha.jpg" },
+      { name: "Swasti P", role: "", image: "/team/swasti.jpg" },
+      { name: "Manya M", role: "", image: "/team/manya.png" },
+      { name: "Sumukh A Bhargav", role: "", image: "/team/sumukh.jpg" },
+      { name: "Rohan V", role: "", image: "/team/rohan.jpeg" },
     ],
   },
 ];

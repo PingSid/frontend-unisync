@@ -22,7 +22,7 @@ export default function QnABlock({
         group
       `}
     >
-      {/* Image */}
+      
       <div className="w-full md:w-2/5">
         <div
           className="
