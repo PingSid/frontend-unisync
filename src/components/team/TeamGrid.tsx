@@ -6,7 +6,7 @@ const teamData = [
     members: [
       { name: "Suhas Basappa Mali", role: "President", image: "/team/suhas.jpeg" },
       { name: "Rudransh Vatsayan", role: "Vice President", image: "/team/rudransh.jpg" },
-      { name: "Yashwanth R", role: "Secretary", image: "/team/yashwanth.jpg" },
+      { name: "Yashwanth R", role: "Secretary", image: "/team/yashwanth.JPG" },
 
     ],
   },
@@ -23,7 +23,7 @@ const teamData = [
   {
     title: "Members",
     members: [
-      { name: "Sri Vidya", role: "", image: "/team/srividya.jpg" },
+      { name: "Sri Vidya", role: "", image: "/team/srividya.JPG" },
       { name: "Disha Sudeep", role: "", image: "/team/disha.jpg" },
       { name: "Swasti P", role: "", image: "/team/swasti.jpg" },
       { name: "Manya M", role: "", image: "/team/manya.png" },
