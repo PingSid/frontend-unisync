@@ -10,8 +10,7 @@ export default function Footer() {
             Ethos Collective
           </h3>
           <p className="text-foreground/60">
-            Rooted in engineering. Driven by systems thinking.
-            Building resilient technology for the future.
+            We serve as a bridge between departments, student bodies, and technical communities — ensuring alignment rather than fragmentation.
           </p>
         </div>
 
@@ -20,17 +19,7 @@ export default function Footer() {
           <h4 className="font-medium text-foreground">
             Navigation
           </h4>
-          <ul className="space-y-2 text-foreground/60">
-            <li className="hover:text-emerald-400 transition-colors duration-300 cursor-pointer">
-              About
-            </li>
-            <li className="hover:text-emerald-400 transition-colors duration-300 cursor-pointer">
-              Projects
-            </li>
-            <li className="hover:text-emerald-400 transition-colors duration-300 cursor-pointer">
-              Join Us
-            </li>
-          </ul>
+          
         </div>
 
         {/* Column 3 */}
@@ -39,7 +28,7 @@ export default function Footer() {
             Connect
           </h4>
           <p className="text-foreground/60">
-            ethos.collective@example.com
+            ethos.collective.vvce@gmail.com
           </p>
           <p className="text-foreground/60">
             Built with discipline and curiosity.
