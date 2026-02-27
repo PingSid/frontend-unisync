@@ -14,10 +14,10 @@ const teamData = [
     title: "The Stewardship Council",
     members: [
       { name: "Sidharth Hanish", role: "SysAdmin", image: "/team/sidharth.jpeg" },
-      { name: "Sinchana M", role: "AI-ML", image: "/team/member2.png" },
-      { name: "Prasad Salagare", role: "UI Engineer", image: "/team/member2.png" },
-      { name: "Diwakar S Gowda", role: "UI Engineer", image: "/team/member2.png" },
-      { name: "Siddharth R", role: "UI Engineer", image: "/team/siddharth.jpeg" },
+      { name: "Sinchana M", role: "Machine Learning", image: "/team/member2.png" },
+      { name: "Prasad Salagare", role: "Design & Visual System", image: "/team/member2.png" },
+      { name: "Diwakar S Gowda", role: "SysAdmin", image: "/team/diwakar.jpeg" },
+      { name: "Siddharth R", role: "IoT & Embedded Systems", image: "/team/siddharth.jpeg" },
           ],
   },
   {

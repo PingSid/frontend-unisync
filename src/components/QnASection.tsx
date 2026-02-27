@@ -9,27 +9,33 @@ export default function QnASection() {
           question="Why does Ethos exist?"
           answer="Ethos exists to introduce systems thinking into student growth.
 
-It is designed to:
-
-Create structured coordination 
-Ensure consistent and disciplined academic engagement
-Promote ethical and responsible execution
-Enhance knowledge beyond classroom boundaries
+It is designed to create structured coordination, ensure consistent and disciplined academic engagement, promote ethical and responsible execution enhance knowledge beyond classroom boundaries
 Build a culture of research, innovation, and collaboration along with Constant learning growth."
-          image="/q1.jpg"
+          image="/q1.png"
         />
 
         <QnABlock
           question="What makes us different?"
-          answer="We think in systems. Infrastructure, software, leadership — all interconnected. We build with long-term resilience, not short-term noise."
-          image="/q2.jpg"
+          answer="
+
+We encourage participation in technical events, competitions, and collaborative initiatives that strengthen problem-solving and applied learning.
+
+
+Ethos promotes consistent academic engagement through structured workshops, guided skill development, and knowledge-sharing sessions."
+          image="/q2.png"
           reverse
         />
 
         <QnABlock
           question="What do we actually build?"
-          answer="Platforms, infrastructure tools, internal systems, and experimental technology. We prototype, test, refine, and deploy with discipline."
-          image="/q3.jpg"
+          answer="People - Students who think critically, act ethically, and execute with discipline.
+
+Processes - Structured systems that enable accountability, collaboration, and sustained growth.
+
+Projects -  Applied and research-driven initiatives that convert knowledge into impact.
+
+Our goal is not to conduct isolated activities, but to build a culture of structured academic excellence."
+          image="/q3.png"
         />
 
       </div>
